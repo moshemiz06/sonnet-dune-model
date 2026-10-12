@@ -4,6 +4,8 @@
 
 An interactive three.js model of Arrakis as it appears in the first part of *Dune*, from the Atreides arrival to just before Paul and Jessica go out into the desert. Everything is generated procedurally; there are no external assets.
 
+**Live: https://moshemiz06.github.io/sonnet-dune-model/**
+
 ![Arrakeen at golden hour](assets/screenshots/s1_overview.png)
 
 ## Run it
