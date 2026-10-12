@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arrakis — Book One</title>
+  <link rel="icon" href="/assets/icon.svg" />
+</head>
+<body>
+  <canvas id="c"></canvas>
+  <div id="labels"></div>
+  <div id="veil"></div>
+
+  <header id="title">
+    <h1>ARRAKIS</h1>
+    <p>Dune &middot; Book One &mdash; the world before the desert</p>
+  </header>
+
+  <nav id="views" aria-label="View">
+    <button id="btn-planet" class="seg on">Planet</button>
+    <button id="btn-arrakeen" class="seg">Arrakeen</button>
+  </nav>
+
+  <aside id="info" hidden>
+    <button id="info-close" aria-label="Close">&times;</button>
+    <h2 id="info-title"></h2>
+    <p id="info-text"></p>
+    <button id="info-enter" class="cta" hidden>Descend to Arrakeen &rarr;</button>
+  </aside>
+
+  <section id="time" hidden>
+    <div class="row">
+      <span class="k">Time of day</span>
+      <span id="clock" class="v">16:30</span>
+    </div>
+    <input id="hour" type="range" min="0" max="24" step="0.05" value="16.5" />
+    <div class="row small">
+      <button id="btn-day" class="chip">Run the day</button>
+      <button id="btn-events" class="chip on">Harvest &amp; worm: on</button>
+    </div>
+  </section>
+
+  <nav id="presets" hidden></nav>
+
+  <div id="tools">
+    <button id="btn-labels" class="chip on">Labels</button>
+    <button id="btn-export" class="chip">Export .glb</button>
+  </div>
+  <div id="hint">drag to orbit &middot; scroll to zoom &middot; right-drag to pan &middot; click a label</div>
+
+  <div id="loader">
+    <div class="ring"></div>
+    <div id="loader-text">Surveying Arrakis&hellip;</div>
+    <div class="bar"><i id="loader-bar"></i></div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
